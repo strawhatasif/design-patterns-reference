@@ -14,7 +14,7 @@ public class Application {
 
     public void draw()
     {
-       images.forEach(image -> image.draw());
+       images.forEach(image -> draw());
     }
 
 }

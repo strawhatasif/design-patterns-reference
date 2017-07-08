@@ -10,7 +10,8 @@ public class GraphicItemGroup {
 
     private List<Rectangle> rectangles = new ArrayList<>();
 
-    public List<Line> getLines() {
+    public List<Line> getLines()
+    {
         return lines;
     }
 
@@ -21,7 +22,7 @@ public class GraphicItemGroup {
 
     public void draw()
     {
-        lines.forEach(line -> line.draw());
-        rectangles.forEach(rectangle -> rectangle.draw());
+        lines.forEach(line -> draw());
+        rectangles.forEach(rectangle -> draw());
     }
 }

@@ -11,7 +11,7 @@ public class GraphicItemGroup implements Graphic {
     @Override
     public void draw()
     {
-        graphics.forEach(graphic -> graphic.draw());
+        graphics.forEach(graphic -> draw());
 
     }
 
