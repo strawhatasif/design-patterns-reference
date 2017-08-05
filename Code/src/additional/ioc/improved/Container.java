@@ -1,16 +1,19 @@
 package additional.ioc.improved;
 
 
-public class Container {
+public class Container
+{
 
     private ImageService imageService;
 
-    public void init(){
+    public void init()
+    {
         imageService = new ImageService();
         imageService.setFileSystem(new UnixFileSystem());
     }
 
-    public ImageService getImageService() {
+    public ImageService getImageService()
+    {
         return imageService;
     }
 

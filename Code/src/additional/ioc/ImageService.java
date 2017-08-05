@@ -1,11 +1,12 @@
 package additional.ioc;
 
 
-public class ImageService {
-
+public class ImageService
+{
     private FileSystem fileSystem = new WindowsFileSystem();
 
-    public String readImage(){
+    public String readImage()
+    {
         return fileSystem.readFile();
     }
 

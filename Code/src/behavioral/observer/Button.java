@@ -8,18 +8,21 @@ public class Button {
     private List list;
 
 
-    public void clicked(){
+    public void clicked()
+    {
 
         list.setListValue(1);
-        inputText.setText("button has been clicked");
+        inputText.setText("the button has been clicked!!!");
 
     }
 
-    public void setInputText(InputText inputText) {
+    public void setInputText(InputText inputText)
+    {
         this.inputText = inputText;
     }
 
-    public void setList(List list) {
+    public void setList(List list)
+    {
         this.list = list;
     }
 }

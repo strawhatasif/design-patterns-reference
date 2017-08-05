@@ -17,8 +17,7 @@ public class Client {
 
         car.getCarParts().add(new Engine());
 
-
-        car.upgrade();;
+        car.upgrade();
         car.print();
         car.render();
 

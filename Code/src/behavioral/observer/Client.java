@@ -3,7 +3,8 @@ package behavioral.observer;
 
 public class Client {
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         Button button = new Button();
         InputText text = new InputText();
         List list = new List();
@@ -12,7 +13,6 @@ public class Client {
         button.setList(list);
 
         button.clicked();
-
     }
 
 }

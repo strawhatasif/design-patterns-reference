@@ -8,11 +8,9 @@ public class Client {
         List list = new List();
         InputText text = new InputText();
 
-
-        ScreenDirectorOne screendirector = new ScreenDirectorOne();
-        screendirector.setInputText(text);
-        list.setScreendirector(screendirector);
-
+        ScreenDirectorOne screenDirector = new ScreenDirectorOne();
+        screenDirector.setInputText(text);
+        list.setScreenDirector(screenDirector);
 
         list.getItems().add("Data item one");
         list.getItems().add("Data item two");
@@ -21,10 +19,6 @@ public class Client {
         list.selectItem(2);
 
         System.out.println("Selected value is: "+text.getValue());
-
-
-
-
     }
 
 }

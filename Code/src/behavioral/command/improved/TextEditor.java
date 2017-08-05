@@ -8,40 +8,47 @@ public class TextEditor {
 
     private String text;
 
-    private Queue<Command> queue = new LinkedList<Command>();
+    private Queue<Command> queue = new LinkedList<>();
 
-    private void executeAction(Command command){
+    private void executeAction(Command command)
+    {
         command.action();
         queue.add(command);
     }
 
-    private void undo(){
+    private void undo()
+    {
         Command command = queue.poll();
-        if(command!=null){
+        if(command!=null)
+        {
             command.undo();
         }
     }
 
-    // GETTer ANd SETTER
+    // getters and setters
 
-
-    public String getText() {
+    public String getText()
+    {
         return text;
     }
 
-    public void setText(String text) {
+    public void setText(String text)
+    {
         this.text = text;
     }
 
-    public Queue<Command> getQueue() {
+    public Queue<Command> getQueue()
+    {
         return queue;
     }
 
-    public void setQueue(Queue<Command> queue) {
+    public void setQueue(Queue<Command> queue)
+    {
         this.queue = queue;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         TextEditor editor = new TextEditor();
         editor.setText("1234");
         ClearTextCommand command = new ClearTextCommand(editor);

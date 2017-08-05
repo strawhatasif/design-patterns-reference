@@ -5,23 +5,24 @@ import java.util.ArrayList;
 
 public class List {
 
-    private java.util.List<String> items = new ArrayList<String>();
-
+    private java.util.List<String> items = new ArrayList<>();
 
     private InputText inputText;
 
-
-    public void selectItem(int itemNumber){
+    public void selectItem(int itemNumber)
+    {
         String item = items.get(itemNumber);
         inputText.setValue(item);
     }
 
 
-    public java.util.List<String> getItems() {
+    public java.util.List<String> getItems()
+    {
         return items;
     }
 
-    public void setInputText(InputText inputText) {
+    public void setInputText(InputText inputText)
+    {
         this.inputText = inputText;
     }
 }

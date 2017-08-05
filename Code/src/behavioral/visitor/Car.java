@@ -1,37 +1,35 @@
 package behavioral.visitor;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class Car {
 
-    List<CarPart> carParts = new ArrayList<CarPart>();
+    List<CarPart> carParts = new ArrayList<>();
 
-    public List<CarPart> getCarParts() {
+    public List<CarPart> getCarParts()
+    {
         return carParts;
     }
 
-    public void setCarParts(List<CarPart> carParts) {
+    public void setCarParts(List<CarPart> carParts)
+    {
         this.carParts = carParts;
     }
 
-    public void render(){
-        for (CarPart carPart : carParts) {
-            carPart.render();
-        }
+    public void render()
+    {
+        carParts.forEach(CarPart::render);
     }
 
-    public void upgrade(){
-        for (CarPart carPart : carParts) {
-            carPart.upgrade();
-        }
+    public void upgrade()
+    {
+        carParts.forEach(CarPart::upgrade);
     }
 
-    public void print(){
-        for (CarPart carPart : carParts) {
-            carPart.print();
-        }
+    public void print()
+    {
+        carParts.forEach(CarPart::print);
     }
 
 }

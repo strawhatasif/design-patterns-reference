@@ -3,17 +3,20 @@ package behavioral.visitor;
 
 public class Engine extends CarPart{
     @Override
-    void print() {
+    void print()
+    {
         System.out.println("Engine");
     }
 
     @Override
-    void render() {
+    void render()
+    {
         System.out.println("Render engine");
     }
 
     @Override
-    void upgrade() {
+    void upgrade()
+    {
         System.out.println("Upgrade engine");
     }
 }

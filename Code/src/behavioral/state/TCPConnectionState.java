@@ -1,9 +1,7 @@
 package behavioral.state;
 
-
-public enum TCPConnectionState {
-
+public enum TCPConnectionState
+{
     OPEN,
     CLOSED
-
 }

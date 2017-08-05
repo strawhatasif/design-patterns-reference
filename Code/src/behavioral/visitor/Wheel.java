@@ -3,17 +3,20 @@ package behavioral.visitor;
 
 public class Wheel extends CarPart {
     @Override
-    void print() {
+    void print()
+    {
         System.out.println("Wheel");
     }
 
     @Override
-    void render() {
+    void render()
+    {
         System.out.println("Render wheel");
     }
 
     @Override
-    void upgrade() {
+    void upgrade()
+    {
         System.out.println("Upgrade wheel");
     }
 }

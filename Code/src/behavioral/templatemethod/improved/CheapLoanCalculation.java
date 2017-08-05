@@ -5,17 +5,20 @@ public class CheapLoanCalculation extends LoanCalculationAlgorithm {
 
 
     @Override
-    int getBaseAmount() {
+    int getBaseAmount()
+    {
         return 100000;
     }
 
     @Override
-    double getInterest() {
+    double getInterest()
+    {
         return 3;
     }
 
     @Override
-    int caclulateDiscount() {
+    int calculateDiscount()
+    {
         return 5000;
     }
 }

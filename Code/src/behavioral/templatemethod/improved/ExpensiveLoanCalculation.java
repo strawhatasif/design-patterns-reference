@@ -5,17 +5,20 @@ public class ExpensiveLoanCalculation extends LoanCalculationAlgorithm {
 
 
     @Override
-    int getBaseAmount() {
+    int getBaseAmount()
+    {
         return 100000;
     }
 
     @Override
-    double getInterest() {
+    double getInterest()
+    {
         return 5.4;
     }
 
     @Override
-    int caclulateDiscount() {
+    int calculateDiscount()
+    {
         return 100;
     }
 }

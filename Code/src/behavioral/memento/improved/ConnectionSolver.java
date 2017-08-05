@@ -10,28 +10,33 @@ public class ConnectionSolver {
     private Point2D secondPoint;
 
 
-    public void calculateLine(){
+    public void calculateLine()
+    {
 
         System.out.println("Calculate line between: "+firstPoint+" and "+secondPoint);
 
     }
 
-    public ConnectionSolverMemento createMemento(){
+    public ConnectionSolverMemento createMemento()
+    {
         return new ConnectionSolverMemento(firstPoint,secondPoint);
     }
 
 
-    public void setMemento(ConnectionSolverMemento memento){
+    public void setMemento(ConnectionSolverMemento memento)
+    {
         firstPoint = memento.getFirstPoint();
         secondPoint = memento.getSecondPoint();
     }
 
 
-    public void setFirstPoint(Point2D firstPoint) {
+    public void setFirstPoint(Point2D firstPoint)
+    {
         this.firstPoint = firstPoint;
     }
 
-    public void setSecondPoint(Point2D secondPoint) {
+    public void setSecondPoint(Point2D secondPoint)
+    {
         this.secondPoint = secondPoint;
     }
 }

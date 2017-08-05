@@ -1,10 +1,9 @@
 package behavioral.strategy;
 
 
-public enum Difficulty {
-
+public enum Difficulty
+{
     EASY,
     MEDIUM,
     HARD
-
 }

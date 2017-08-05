@@ -1,8 +1,7 @@
 package behavioral.observer.improved;
 
 
-public interface Observer {
-
+public interface Observer
+{
     void update();
-
 }

@@ -1,10 +1,4 @@
-package improved;
-
-
-import behavioral.visitor.improved.Car;
-import behavioral.visitor.improved.Engine;
-import behavioral.visitor.improved.Light;
-import behavioral.visitor.improved.Wheel;
+package behavioral.visitor.improved;
 
 public class Client {
 
@@ -22,12 +16,9 @@ public class Client {
 
         car.getCarParts().add(new Engine());
 
-
-        car.upgrade();;
+        car.upgrade();
         car.print();
         car.render();
-        
-        
     }
 
 }

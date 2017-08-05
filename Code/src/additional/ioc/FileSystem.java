@@ -1,8 +1,7 @@
 package additional.ioc;
 
 
-public interface FileSystem {
-
+public interface FileSystem
+{
     String readFile();
-
 }

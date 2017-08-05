@@ -12,20 +12,24 @@ public class TextEditor {
         this.text = text;
     }
 
-    public void clearText(){
+    public void clearText()
+    {
         undoText = text;
         this.text = "";
     }
 
-    public String getText() {
+    public String getText()
+    {
         return text;
     }
 
-    public void undo(){
+    public void undo()
+    {
         this.text = undoText;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         TextEditor editor = new TextEditor();
         editor.addText("1234");
         editor.clearText();

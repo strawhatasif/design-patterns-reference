@@ -1,15 +1,15 @@
 package behavioral.mediator;
 
 
-public class Client {
+public class Client
+{
 
-    public static void main(String[] args) {
-
+    public static void main(String[] args)
+    {
         List list = new List();
         InputText text = new InputText();
 
         list.setInputText(text);
-
 
         list.getItems().add("Data item one");
         list.getItems().add("Data item two");
@@ -18,10 +18,6 @@ public class Client {
         list.selectItem(0);
 
         System.out.println("Selected value is: "+text.getValue());
-
-
-
-
     }
 
 }

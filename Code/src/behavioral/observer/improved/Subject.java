@@ -1,12 +1,9 @@
 package behavioral.observer.improved;
 
 
-public interface Subject {
-
+public interface Subject
+{
     void attachObserver(Observer observer);
-
     void detachObserver(Observer observer);
-
     void change();
-
 }

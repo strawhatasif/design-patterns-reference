@@ -7,9 +7,7 @@ public class Client {
         LoanCalculationAlgorithm loanCalculationAlgorithm = new ExpensiveLoanCalculation();
         System.out.println(loanCalculationAlgorithm.calculateLoan());
 
-
         loanCalculationAlgorithm = new CheapLoanCalculation();
         System.out.println(loanCalculationAlgorithm.calculateLoan());
     }
-
 }

@@ -3,23 +3,27 @@ package additional.dto;
 
 public class DomainObject {
 
-    private String aProperty;
+    private String aproperty;
 
-    private String confedential;
+    private String confidential;
 
-    public String getaProperty() {
-        return aProperty;
+    public String getAproperty()
+    {
+        return aproperty;
     }
 
-    public void setaProperty(String aProperty) {
-        this.aProperty = aProperty;
+    public void setAproperty(String aproperty)
+    {
+        this.aproperty = aproperty;
     }
 
-    public String getConfedential() {
-        return confedential;
+    public String getConfidential()
+    {
+        return confidential;
     }
 
-    public void setConfedential(String confedential) {
-        this.confedential = confedential;
+    public void setConfidential(String confidential)
+    {
+        this.confidential = confidential;
     }
 }

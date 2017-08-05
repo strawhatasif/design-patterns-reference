@@ -3,7 +3,8 @@ package behavioral.visitor.improved;
 
 public abstract class CarPart {
 
-    void acceptCarPartVisitor(CarPartVisitor visitor){
+    void acceptCarPartVisitor(CarPartVisitor visitor)
+    {
         visitor.visit(this);
     }
 

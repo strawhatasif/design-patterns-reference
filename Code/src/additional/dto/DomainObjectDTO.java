@@ -3,14 +3,16 @@ package additional.dto;
 
 public class DomainObjectDTO {
 
-    private String aProperty;
+    private String aproperty;
 
 
-    public String getaProperty() {
-        return aProperty;
+    public String getAproperty()
+    {
+        return aproperty;
     }
 
-    public void setaProperty(String aProperty) {
-        this.aProperty = aProperty;
+    public void setAproperty(String aproperty)
+    {
+        this.aproperty = aproperty;
     }
 }
